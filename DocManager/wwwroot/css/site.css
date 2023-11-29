@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Chakra+Petch:wght@300&family=Old+Standard+TT&family=Poppins:wght@100;300;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body {
+    background-color: #172D13;
+    color: white;
+    /*#D76F30   orange*/
+    /*##6BB77B   light green*/
+}
+
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-heading{
+    font-size: 7em;
+    padding-bottom: 50px;
+    cursor: pointer;
+}
+
+.login-form {
+    display: flex;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: #6BB77B;
+    flex-direction: column;
+}
+
+.login-form h1{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.login-form input, .login-form button{
+    margin: 10px;
+    height: 50px;
+    width: 400px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.login-form button {
+    margin-top: 30px;
+    font-size: 1em;
+    background-color: #D76F30;
+    color: white;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #e19160;
+}
