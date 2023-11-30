@@ -39,12 +39,13 @@ namespace DocManager.Pages
             //check if the provided username and password are valid
             if (ValidateAccount(username, password))
             {
-				return Redirect("https://www.youtube.com/results?search_query=.net+login");
+                return RedirectPermanent("/App");
 			}
             else
             {
-				//Incorrect username and password
-				return Redirect("https://learn.microsoft.com/en-us/answers/questions/699941/read-and-process-json-file-with-c");
+                //Incorrect username and password
+                string errorMessage = "The username or password that you have entered to login is incorrect.";
+                return RedirectToPage("/Error", new {message = errorMessage});
 			}
 			
 		}

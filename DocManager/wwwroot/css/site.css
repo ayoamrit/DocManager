@@ -27,6 +27,7 @@ body {
     font-size: 7em;
     padding-bottom: 50px;
     cursor: pointer;
+    text-align: center;
 }
 
 .login-form {
@@ -64,4 +65,29 @@ body {
 
 .login-form button:hover {
     background-color: #e19160;
+}
+
+@media screen and (max-width: 800px){
+    .login-heading{
+        font-size: 5em;
+        text-align: center;
+    }
+}
+
+/*Error Page Style*/
+.error-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 100px;
+}
+
+.text-danger{
+    font-size: 7em;
+}
+
+.error-section p{
+    margin-top: 40px;
+    font-size: 2em;
 }
