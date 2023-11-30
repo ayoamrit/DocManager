@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: poppins;
+    user-select: none;
 }
 
 body {
@@ -90,4 +91,87 @@ body {
 .error-section p{
     margin-top: 40px;
     font-size: 2em;
+}
+
+/*Main-Nav Section Style*/
+.main{
+    width: 100%;
+}
+
+.nav{
+    padding: 30px 20px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+.company-title{
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    cursor: pointer;
+    margin: 0 5px;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.nav ul li a{
+    padding: 0 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav ul li:hover {
+    background-color: #e19160;
+}
+
+/*App Screen Style*/
+.app-screen {
+    width: 100%;
+    height: 90vh;
+    background-color: #6BB77B;
+}
+
+/*Create Section Style*/
+.create-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 8%;
+}
+
+.create-section .title{
+    color: white;
+    font-size: 5em;
+}
+
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 500px;
+    padding: 15px;
+}
+
+.field-control{
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.input-fields button{
+    cursor: pointer;
+    background-color: #D76F30;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+.input-fields button:hover{
+    background-color: #e19160;
 }
